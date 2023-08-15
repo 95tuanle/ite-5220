@@ -1,0 +1,6 @@
+DECLARE
+    A_DATE DATE;
+BEGIN
+    SELECT ADD_MONTHS(SYSDATE, 6) INTO A_DATE FROM DUAL;
+    DBMS_OUTPUT.PUT_LINE('In six months, the date will be: ' || A_DATE);
+END;
